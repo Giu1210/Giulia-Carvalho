@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio |Giulia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-[#E67E50]">Giulia Carvalho</a>
+      
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link uppercase text-sm font-medium tracking-wider">Início</a>
+        <a href="portfolio.html" class="nav-link active uppercase text-sm font-medium tracking-wider">Portfólio</a>
+      </nav>
+      
+      <!-- Menu Mobile -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <div class="hamburger">
+          <div class="line w-6 h-0.5 bg-[#2C2C2C] mb-1.5 transition-all"></div>
+          <div class="line w-6 h-0.5 bg-[#2C2C2C] mb-1.5 transition-all"></div>
+          <div class="line w-6 h-0.5 bg-[#2C2C2C] transition-all"></div>
+        </div>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+      <div class="flex flex-col space-y-4">
+        <a href="index.html" class="nav-link uppercase text-sm font-medium tracking-wider py-2">Início</a>
+        <a href="portfolio.html" class="nav-link active uppercase text-sm font-medium tracking-wider py-2">Portfólio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4 bg-[#F5F1E8]">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h1 class="hero-title text-4xl md:text-5xl font-bold mb-6">Meu Portfólio</h1>
+      <p class="text-lg text-gray-600">
+        Aqui estão alguns dos projetos de sites que unem funcionalidade e inovaçâo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Grid de Projetos -->
+  <section class="py-16 px-4 bg-white">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Projeto 1 -->
+        <div class="blog-card bg-[#F5F1E8] rounded-lg overflow-hidden shadow-md">
+          <img src="pizaria.png" 
+               alt="Projeto Web Design" 
+               class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Cardápio para Pizzaria</h3>
+            
+            <a href="https://giu1210.github.io/Pizza/" class="text-[#E67E50] font-medium inline-flex items-center">Ver Projeto 
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="blog-card bg-[#F5F1E8] rounded-lg overflow-hidden shadow-md">
+          <img src="croche.png" 
+               alt="Design Gráfico" 
+               class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Loja virtua de Croche <Del></Del></h3>
+            
+            <a href="https://crochedasu.github.io/crochedasu/" class="text-[#E67E50] font-medium inline-flex items-center">Ver Projeto 
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+       
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
